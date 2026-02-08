@@ -1,0 +1,436 @@
+:root {
+    --primary: #0088cc;
+    --bg: #f4f7f9;
+    --card-bg: #ffffff;
+    --text: #2c3e50;
+    --text-light: #7f8c8d;
+    --nav-bg: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    padding-bottom: 80px;
+    /* Чтобы контент не перекрывался меню */
+}
+
+.container {
+    padding: 0 20px;
+}
+
+/* Логика страниц */
+.page {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Шапка */
+.header {
+    background: var(--primary);
+    color: white;
+    padding: 30px 20px;
+
+    :root {
+        --primary: #0088cc;
+        --bg: #f4f7f9;
+        --card-bg: #ffffff;
+        --text: #2c3e50;
+        --text-light: #7f8c8d;
+        --nav-bg: #ffffff;
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        margin: 0;
+        padding: 0;
+        padding-bottom: 80px;
+        /* Чтобы контент не перекрывался меню */
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Логика страниц */
+    .page {
+        display: none;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .active {
+        display: block;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Шапка */
+    .header {
+        background: var(--primary);
+        color: white;
+        padding: 30px 20px;
+        text-align: center;
+        border-radius: 0 0 25px 25px;
+        margin-bottom: 20px;
+    }
+
+    .stat-badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    /* Карточки */
+    .card {
+        background: var(--card-bg);
+        border-radius: 20px;
+        padding: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+    }
+
+    .card-icon {
+        font-size: 20px;
+        color: var(--primary);
+        margin-right: 15px;
+        background: #e1f5fe;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+    }
+
+    /* Формы */
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .btn {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 15px;
+        width: 100%;
+        border-radius: 12px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* Нижнее меню */
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: var(--nav-bg);
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        border-top: 1px solid #eee;
+        z-index: 1000;
+    }
+
+    .nav-item {
+        text-align: center;
+        color: var(--text-light);
+        cursor: pointer;
+        flex: 1;
+    }
+
+    .nav-item i {
+        font-size: 20px;
+        display: block;
+        margin-bottom: 2px;
+    }
+
+    .nav-item span {
+        font-size: 11px;
+    }
+
+    .nav-item.active-nav {
+        color: var(--primary);
+    }
+
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    margin-bottom: 20px;
+}
+
+.stat-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Карточки */
+.card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.card-icon {
+    font-size: 20px;
+    color: var(--primary);
+    margin-right: 15px;
+    background: #e1f5fe;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+/* Формы */
+.input-group {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Нижнее меню */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--nav-bg);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    z-index: 1000;
+}
+
+.nav-item {
+    text-align: center;
+    color: var(--text-light);
+    cursor: pointer;
+    flex: 1;
+}
+
+.nav-item i {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.nav-item span {
+    font-size: 11px;
+}
+
+.nav-item.active-nav {
+    color: var(--primary);
+}
+
+/* Контейнер-ограничитель для десктопа */
+.services-container {
+ max-width: 800px; /* Чтобы на больших мониторах сетка не была на весь экран */
+ margin: 0 auto;
+ padding: 10px;
+}
+
+/* Умная сетка: на мобилках 2 в ряд, на ПК — 4 в ряд */
+.services-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+ gap: 15px;
+}
+
+.service-card {
+ background: white;
+ border-radius: 16px;
+ overflow: hidden;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+ display: flex;
+ flex-direction: column;
+}
+
+/* Обертка для фото, чтобы держать форму */
+.img-wrapper {
+ width: 100%;
+ aspect-ratio: 1 / 1; /* ДЕЛАЕТ ФОТО ИДЕАЛЬНО КВАДРАТНЫМ */
+ overflow: hidden;
+}
+
+.img-wrapper img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover; /* Заполняет квадрат без искажения пропорций */
+ transition: transform 0.3s;
+}
+
+/* Эффект при наведении/нажатии */
+.service-card:active .img-wrapper img {
+ transform: scale(1.1);
+}
+
+.service-info {
+ padding: 12px 8px;
+ text-align: center;
+}
+
+.service-info h3 {
+ margin: 0;
+ font-size: 15px;
+ font-weight: 600;
+ color: #222;
+}
+
+.service-info p {
+ margin: 4px 0 0;
+ font-size: 11px;
+ color: #888;
+}
+
+
+.home-footer {
+  margin-top: 40px;
+  padding: 30px 20px 100px; /* Снизу отступ больше, чтобы не перекрывало навигацию */
+  background: #f9fafb;
+  border-top: 1px solid #eee;
+  text-align: left;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr; /* На мобилках в один столбец */
+  gap: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* На десктопе делаем в два столбца */
+@media (min-width: 600px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer-item i {
+  font-size: 20px;
+  color: #4f46e5;
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.footer-text h4 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #111;
+}
+
+.footer-text p {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Кнопки-ссылки */
+.route-link, .tg-link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #4f46e5;
+  padding: 8px 16px;
+  border: 1px solid #4f46e5;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.tg-link {
+  background: #4f46e5;
+  color: white;
+}
+
+.route-link:hover, .tg-link:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 11px;
+  color: #999;
+}
